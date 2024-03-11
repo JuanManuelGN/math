@@ -1,3 +1,6 @@
+
+package collatz_conjecture
+
 import scala.annotation.tailrec
 import scala.language.postfixOps
 
@@ -31,7 +34,7 @@ def main(n: Long): Unit = {
 
 
 //  print(s"Conjetura de Collatz para $n es \n${resp.mkString("\n")}")
-  print(s"Mayor número en una de las prograsiones = $max")
+  print(s"Mayor número en una de las progresiones = $max")
   print(s"Camino mas largo = $pathMax")
 //  maxs.foreach(m => println(s"Ratio entre el mayor número de una progresión(${m._1}) y el inicio(${m._2}) = ${m._1 / m._2}"))
   print(s"Mayor ratio entre el tamaño de una progresión y el número de inicio = ${maxs.max(LOrdering) match {case(m, i) => m / i}}")
